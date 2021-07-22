@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    volumes:
+      - .:/alwayswatching-django 
+    ports:
+     - 8000:8000
+    image: alwayswatching-app:alwayswatching-django
+    container_name: alwayswatching_container
+    command: python manage.py runserver 0.0.0.0:8000
