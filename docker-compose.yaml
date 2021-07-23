@@ -1,6 +1,6 @@
 version: '3.8'
 services:
-  app:
+  alwayswatching-app:
     build: .
     volumes:
       - .:/alwayswatching-django 
