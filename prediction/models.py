@@ -33,9 +33,9 @@ class NewPostsManager():
         sortedSimilarityDf = postInterestsSimilaritiesDf.sort_values(by="similarity", ascending=False)
 
         postIds = []
-        firstTier = random.sample(range(20), 4)
-        secondTier = random.sample(range(20, 600), 6)
-        thirdTier = random.sample(range(600, len(sortedSimilarityDf)), 1)
+        firstTier = random.sample(range(20), 6)
+        secondTier = random.sample(range(20, 400), 4)
+        thirdTier = random.sample(range(400, len(sortedSimilarityDf)), 1)
 
         postIndicies = firstTier + secondTier + thirdTier
 
